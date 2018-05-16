@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name BluePill_breakouts)(type KiCad)(uri D:/Arbeitsprogramme/PCBDesign/KiCAD/share/kicad/PersLibs/footprints/BluePill_breakouts.pretty)(options "")(descr ""))
+)
