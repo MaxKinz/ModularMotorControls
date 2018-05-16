@@ -1,0 +1,7 @@
+(fp_lib_table
+  (lib (name CRF1)(type KiCad)(uri "F:/Eigene Dokumente/DROPBOX/Dropbox/SEBARES/VESCSource/bldc-hardware-master/bldc-hardware-master/design/Libraries/crf1.pretty")(options "")(descr ""))
+  (lib (name w_smd_cap)(type Legacy)(uri "F:/Eigene Dokumente/DROPBOX/Dropbox/SEBARES/VESCSource/bldc-hardware-master/bldc-hardware-master/design/Libraries/w_smd_cap.mod")(options "")(descr ""))
+  (lib (name w_smd_diode)(type Legacy)(uri "F:/Eigene Dokumente/DROPBOX/Dropbox/SEBARES/VESCSource/bldc-hardware-master/bldc-hardware-master/design/Libraries/w_smd_diode.mod")(options "")(descr ""))
+  (lib (name w_smd_inductors)(type Legacy)(uri "F:/Eigene Dokumente/DROPBOX/Dropbox/SEBARES/VESCSource/bldc-hardware-master/bldc-hardware-master/design/Libraries/w_smd_inductors.mod")(options "")(descr ""))
+  (lib (name w_conn_jst-ph)(type KiCad)(uri "F:/Eigene Dokumente/DROPBOX/Dropbox/SEBARES/VESCSource/bldc-hardware-master/bldc-hardware-master/design/Libraries/w_conn_jst-ph.pretty")(options "")(descr ""))
+)
