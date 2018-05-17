@@ -31,6 +31,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:suppliesFrom60V-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -292,4 +293,17 @@ Wire Wire Line
 	5050 4050 5050 4500
 Wire Wire Line
 	5050 4500 4350 4500
+$Comp
+L +VDC #PWR?
+U 1 1 5AFE02E8
+P 6850 3700
+F 0 "#PWR?" H 6850 3600 50  0001 C CNN
+F 1 "+VDC" H 6850 3950 50  0000 C CNN
+F 2 "" H 6850 3700 50  0001 C CNN
+F 3 "" H 6850 3700 50  0001 C CNN
+	1    6850 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 3850 6850 3700
 $EndSCHEMATC

@@ -1,10 +1,6 @@
-update=23.09.2017 13:44:31
+update=17.05.2018 16:10:56
 version=1
 last_client=kicad
-[general]
-version=1
-RootSch=
-BoardNm=
 [pcbnew]
 version=1
 LastNetListRead=
@@ -63,3 +59,5 @@ LibName29=valves
 LibName30=BLDC_4-cache
 LibName31=BLDC_4-rescue
 LibName32=DRV8302Breakout/DRV8302Breakout-cache
+[general]
+version=1

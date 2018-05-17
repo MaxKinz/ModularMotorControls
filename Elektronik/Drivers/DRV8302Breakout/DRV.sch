@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -323,4 +323,20 @@ Wire Wire Line
 	8500 2800 6650 2800
 Wire Wire Line
 	6650 2800 6650 2600
+$Sheet
+S 4800 3500 600  300 
+U 5AFDF8CF
+F0 "Voltreg" 60
+F1 "VoltageReg.sch" 60
+F2 "VIN" I R 5400 3650 60 
+F3 "12V" I L 4800 3650 60 
+$EndSheet
+Wire Wire Line
+	4750 3650 1900 3650
+Wire Wire Line
+	1900 3650 1900 3050
+Text GLabel 5950 3650 2    60   Input ~ 0
+V_SUPPLY
+Wire Wire Line
+	5400 3650 5950 3650
 $EndSCHEMATC
