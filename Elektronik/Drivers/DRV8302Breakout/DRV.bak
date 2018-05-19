@@ -28,10 +28,8 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:BLDC_4-cache
-LIBS:BLDC_4-rescue
-LIBS:DRV8302Breakout-cache
 LIBS:DRV-cache
+LIBS:12VFrom60V-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
