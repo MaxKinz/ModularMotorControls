@@ -1,0 +1,289 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:BLDC_4-cache
+LIBS:BLDC_4-rescue
+LIBS:DRV8302Breakout-cache
+LIBS:DRV-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LMR16020 U1
+U 1 1 5B008A43
+P 5850 3600
+F 0 "U1" H 5850 3600 60  0000 C CNN
+F 1 "LMR16020" H 5650 4250 60  0000 C CNN
+F 2 "SMD_Packages:SOIC-8-N" H 5850 3600 60  0001 C CNN
+F 3 "" H 5850 3600 60  0001 C CNN
+	1    5850 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C7
+U 1 1 5B008A44
+P 5800 2700
+F 0 "C7" V 5650 2700 50  0000 L CNN
+F 1 "0.1μF" V 5950 2650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5838 2550 50  0001 C CNN
+F 3 "" H 5800 2700 50  0001 C CNN
+	1    5800 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L CP1 Cout2
+U 1 1 5B008A45
+P 7400 3300
+F 0 "Cout2" H 7425 3400 50  0000 L CNN
+F 1 "33μF" H 7425 3200 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_5x5.3" H 7400 3300 50  0001 C CNN
+F 3 "" H 7400 3300 50  0001 C CNN
+	1    7400 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C6
+U 1 1 5B008A46
+P 4950 3350
+F 0 "C6" H 4975 3450 50  0000 L CNN
+F 1 "10μF" H 4975 3250 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_5x5.3" H 4950 3350 50  0001 C CNN
+F 3 "" H 4950 3350 50  0001 C CNN
+	1    4950 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR036
+U 1 1 5B008A47
+P 7000 3650
+F 0 "#PWR036" H 7000 3400 50  0001 C CNN
+F 1 "GND" H 7000 3500 50  0000 C CNN
+F 2 "" H 7000 3650 50  0001 C CNN
+F 3 "" H 7000 3650 50  0001 C CNN
+	1    7000 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Schottky D2
+U 1 1 5B008A48
+P 6750 3300
+F 0 "D2" H 6750 3400 50  0000 C CNN
+F 1 "D_Schottky_75V" H 6750 3250 50  0000 C CNN
+F 2 "Diodes_SMD:D_0805" H 6750 3300 50  0001 C CNN
+F 3 "" H 6750 3300 50  0001 C CNN
+	1    6750 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 3100 7400 3150
+Connection ~ 7400 3100
+Wire Wire Line
+	7400 3550 7400 3450
+Wire Wire Line
+	6750 3550 7400 3550
+Wire Wire Line
+	5250 3100 5250 2700
+Wire Wire Line
+	5250 2700 5650 2700
+Wire Wire Line
+	5950 2700 6400 2700
+Wire Wire Line
+	6400 2700 6400 3100
+Wire Wire Line
+	5250 3200 4950 3200
+$Comp
+L GND #PWR037
+U 1 1 5B008A49
+P 4950 3500
+F 0 "#PWR037" H 4950 3250 50  0001 C CNN
+F 1 "GND" H 4950 3350 50  0000 C CNN
+F 2 "" H 4950 3500 50  0001 C CNN
+F 3 "" H 4950 3500 50  0001 C CNN
+	1    4950 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR038
+U 1 1 5B008A4A
+P 4950 3000
+F 0 "#PWR038" H 4950 2850 50  0001 C CNN
+F 1 "+BATT" H 4950 3140 50  0000 C CNN
+F 2 "" H 4950 3000 50  0001 C CNN
+F 3 "" H 4950 3000 50  0001 C CNN
+	1    4950 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3200 4950 3000
+$Comp
+L L L3
+U 1 1 5B008A4B
+P 6950 3100
+F 0 "L3" V 6750 3100 50  0000 C CNN
+F 1 "10μH" V 6850 3100 50  0000 C CNN
+F 2 "w_smd_inductors:inductor_smd_8x5mm" H 6950 3100 50  0001 C CNN
+F 3 "" H 6950 3100 50  0001 C CNN
+	1    6950 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7100 3100 7650 3100
+$Comp
+L R RFBT1
+U 1 1 5B008A4C
+P 7650 3300
+F 0 "RFBT1" V 7730 3300 50  0000 C CNN
+F 1 "100k" V 7650 3300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 7580 3300 50  0001 C CNN
+F 3 "" H 7650 3300 50  0001 C CNN
+	1    7650 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R RFBB1
+U 1 1 5B008A4D
+P 7650 3800
+F 0 "RFBB1" V 7730 3800 50  0000 C CNN
+F 1 "17.8k" V 7650 3800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 7580 3800 50  0001 C CNN
+F 3 "" H 7650 3800 50  0001 C CNN
+	1    7650 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R RT1
+U 1 1 5B008A4E
+P 5250 3750
+F 0 "RT1" V 5330 3750 50  0000 C CNN
+F 1 "41,2k" V 5250 3750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5180 3750 50  0001 C CNN
+F 3 "" H 5250 3750 50  0001 C CNN
+	1    5250 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 2900 7650 3150
+Wire Wire Line
+	7650 3450 7650 3650
+Wire Wire Line
+	7650 3550 7450 3550
+Wire Wire Line
+	7450 3550 7450 3900
+Wire Wire Line
+	7450 3900 6400 3900
+Connection ~ 7650 3550
+$Comp
+L GND #PWR039
+U 1 1 5B008A4F
+P 7650 3950
+F 0 "#PWR039" H 7650 3700 50  0001 C CNN
+F 1 "GND" H 7650 3800 50  0000 C CNN
+F 2 "" H 7650 3950 50  0001 C CNN
+F 3 "" H 7650 3950 50  0001 C CNN
+	1    7650 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3400 5250 3600
+$Comp
+L GND #PWR040
+U 1 1 5B008A50
+P 5250 3900
+F 0 "#PWR040" H 5250 3650 50  0001 C CNN
+F 1 "GND" H 5250 3750 50  0000 C CNN
+F 2 "" H 5250 3900 50  0001 C CNN
+F 3 "" H 5250 3900 50  0001 C CNN
+	1    5250 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR041
+U 1 1 5B008A51
+P 6500 3200
+F 0 "#PWR041" H 6500 2950 50  0001 C CNN
+F 1 "GND" H 6500 3050 50  0000 C CNN
+F 2 "" H 6500 3200 50  0001 C CNN
+F 3 "" H 6500 3200 50  0001 C CNN
+	1    6500 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3200 6400 3200
+$Comp
+L CP1 Cout1
+U 1 1 5B008A52
+P 7150 3300
+F 0 "Cout1" H 7175 3400 50  0000 L CNN
+F 1 "33μF" H 7175 3200 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_5x5.3" H 7150 3300 50  0001 C CNN
+F 3 "" H 7150 3300 50  0001 C CNN
+	1    7150 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3100 6800 3100
+Connection ~ 6750 3100
+Wire Wire Line
+	6750 3450 6750 3550
+Wire Wire Line
+	6400 3900 6400 3400
+Wire Wire Line
+	6750 3100 6750 3150
+Text HLabel 4850 3100 0    60   Input ~ 0
+VIN
+Wire Wire Line
+	4850 3100 4950 3100
+Connection ~ 4950 3100
+Text HLabel 7750 2900 2    60   Input ~ 0
+5V
+Wire Wire Line
+	7750 2900 7650 2900
+Connection ~ 7650 3100
+Wire Wire Line
+	7150 3100 7150 3150
+Connection ~ 7150 3100
+Wire Wire Line
+	7150 3450 7150 3550
+Connection ~ 7150 3550
+Wire Wire Line
+	7000 3550 7000 3650
+Connection ~ 7000 3550
+$EndSCHEMATC
