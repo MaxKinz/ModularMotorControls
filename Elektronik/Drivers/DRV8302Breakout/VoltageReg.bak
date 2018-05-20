@@ -28,8 +28,10 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:BLDC_4-cache
+LIBS:BLDC_4-rescue
+LIBS:DRV8302Breakout-cache
 LIBS:DRV-cache
-LIBS:5VFrom60V-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -105,7 +107,7 @@ U 1 1 5AFDE089
 P 5100 3750
 F 0 "L2" V 5050 3750 50  0000 C CNN
 F 1 "10μ" V 5175 3750 50  0000 C CNN
-F 2 "Choke_SMD:Choke_SMD_7.3x7.3_H3.5" H 5100 3750 50  0001 C CNN
+F 2 "w_smd_inductors:inductor_smd_8x5mm" H 5100 3750 50  0001 C CNN
 F 3 "" H 5100 3750 50  0001 C CNN
 	1    5100 3750
 	0    1    1    0   
