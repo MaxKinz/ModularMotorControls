@@ -28,13 +28,15 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:BLDC_4-cache
+LIBS:BLDC_4-rescue
+LIBS:DRV8302Breakout-cache
 LIBS:DRV-cache
-LIBS:12VFrom60V-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -183,10 +185,10 @@ Wire Wire Line
 Wire Wire Line
 	2900 3100 2900 3050
 $Comp
-L VCC #PWR?
+L VCC #PWR01
 U 1 1 5AFD4E17
 P 1800 3250
-F 0 "#PWR?" H 1800 3100 50  0001 C CNN
+F 0 "#PWR01" H 1800 3100 50  0001 C CNN
 F 1 "VCC" H 1800 3400 50  0000 C CNN
 F 2 "" H 1800 3250 50  0001 C CNN
 F 3 "" H 1800 3250 50  0001 C CNN
@@ -210,12 +212,12 @@ Wire Wire Line
 Wire Wire Line
 	2100 2450 2100 2550
 $Comp
-L Conn_02x15_Odd_Even J?
+L Conn_02x15_Odd_Even J1
 U 1 1 5AFD845E
 P 2500 2850
-F 0 "J?" H 2550 3650 50  0000 C CNN
+F 0 "J1" H 2550 3650 50  0000 C CNN
 F 1 "CONN_CPU" H 2550 2050 50  0000 C CNN
-F 2 "" H 2500 2850 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x15_Pitch2.54mm" H 2500 2850 50  0001 C CNN
 F 3 "" H 2500 2850 50  0001 C CNN
 	1    2500 2850
 	0    -1   -1   0   
@@ -227,12 +229,12 @@ Wire Wire Line
 Wire Wire Line
 	2400 3200 2400 3050
 $Comp
-L Conn_02x10_Odd_Even J?
+L Conn_02x10_Odd_Even J2
 U 1 1 5AFDA65D
 P 8100 2250
-F 0 "J?" H 8150 2750 50  0000 C CNN
+F 0 "J2" H 8150 2750 50  0000 C CNN
 F 1 "Conn_POWER" H 8150 1650 50  0000 C CNN
-F 2 "" H 8100 2250 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x10_Pitch2.54mm" H 8100 2250 50  0001 C CNN
 F 3 "" H 8100 2250 50  0001 C CNN
 	1    8100 2250
 	1    0    0    -1  
@@ -337,4 +339,40 @@ Text GLabel 5950 3650 2    60   Input ~ 0
 V_SUPPLY
 Wire Wire Line
 	5400 3650 5950 3650
+$Sheet
+S 4800 4150 600  400 
+U 5B00867F
+F0 "5vReg" 60
+F1 "voltreg_5v.sch" 60
+F2 "VIN" I R 5400 4350 60 
+F3 "5V" I L 4800 4350 60 
+$EndSheet
+Wire Wire Line
+	5400 4350 5850 4350
+Wire Wire Line
+	5850 4350 5850 3650
+Connection ~ 5850 3650
+Wire Wire Line
+	4800 4350 1650 4350
+Wire Wire Line
+	1650 4350 1650 2550
+Wire Wire Line
+	1650 2550 1800 2550
+$Comp
+L GND #PWR02
+U 1 1 5B00A548
+P 1450 2650
+F 0 "#PWR02" H 1450 2400 50  0001 C CNN
+F 1 "GND" H 1450 2500 50  0000 C CNN
+F 2 "" H 1450 2650 50  0001 C CNN
+F 3 "" H 1450 2650 50  0001 C CNN
+	1    1450 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 2550 1900 2450
+Wire Wire Line
+	1900 2450 1450 2450
+Wire Wire Line
+	1450 2450 1450 2650
 $EndSCHEMATC
