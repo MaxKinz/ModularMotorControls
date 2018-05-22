@@ -1,0 +1,24 @@
+Drill report for F:\git\ModularMotorControl\Elektronik\PowerStages\likeVesc.kicad_pcb
+Created on 21.05.2018 13:31:03
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'likeVesc.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.76mm  0.030"  (31 holes)
+    T2  1.00mm  0.039"  (20 holes)
+    T3  1.32mm  0.052"  (7 holes)
+
+    Total plated holes count 58
+
+
+Drill file 'likeVesc-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0

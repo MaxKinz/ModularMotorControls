@@ -1,0 +1,23 @@
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet
+1,"Connector, double row, 02x10, pin header",CONN_02X10,J1,CONN_02X10,Pin_Header_Straight_2x10_Pitch2.54mm,1,
+2,2-pin screw terminal connector,Screw_Terminal_1x02,J3 J4,Screw_Terminal_1x02,TerminalBlock_Altech_AK300-2_P5.00mm,2,
+3,3-pin screw terminal connector,Screw_Terminal_1x03,J2,Screw_Terminal_1x03,TerminalBlock_Altech_AK300-3_P5.00mm,1,
+4,,MOSFET_N,Q1 Q2 Q3 Q4 Q5 Q6,IRFS7530,D2PAK-7-GDS,6,
+5,,R-RESCUE-BLDC_4,R3 R7 R11,39k,SMD-0603_r,3,
+6,,R-RESCUE-BLDC_4,R1 R2 R5 R6 R9 R10,4R7,SMD-0603_r,6,
+7,,SHUNT,R4 R8,SHUNT,WSLP2726,2,
+
+
+
+
+
+Component Groups:,7
+Component Count:,21
+Fitted Components:,21
+Number of PCBs:,1
+Total components:,21
+Schematic Version:,
+Schematic Date:,
+BoM Date:,22.05.2018 20:13:28
+Schematic Source:,F:/git/ModularMotorControl/Elektronik/PowerStages/likeVesc.sch
+KiCad Version:,Eeschema 4.0.6
